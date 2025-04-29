@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SecureAI – Unified Threat, Malware, and Phishing Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #444;
+            font-size: 18px;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SecureAI – Unified Threat, Malware, and Phishing Scanner</h1>
+        <form action="/scan" method="post" enctype="multipart/form-data">
+            <h2>Phishing Detection</h2>
+            <label for="url">Enter a URL for phishing detection:</label>
+            <input type="text" id="url" name="url" placeholder="https://example.com">
+
+            <h2>Malware Detection</h2>
+            <label for="malware_file">Upload file for malware scanning:</label>
+            <input type="file" id="malware_file" name="malware_file">
+
+            <h2>Threat and Risk Assessment</h2>
+            <label for="csv_file">Upload CSV file for risk analysis:</label>
+            <input type="file" id="csv_file" name="csv_file">
+
+            <button type="submit">Scan Now</button>
+        </form>
+        <footer>© 2025 SecureAI | All Rights Reserved</footer>
+    </div>
+</body>
+</html>
